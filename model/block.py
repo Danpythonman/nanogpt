@@ -5,8 +5,8 @@ import torch
 import torch.nn as nn
 from torch import Tensor
 
-from attn import SelfAttention
-from ffwd import FeedForward
+from .attn import SelfAttention
+from .ffwd import FeedForward
 
 
 class TransformerBlock(nn.Module):

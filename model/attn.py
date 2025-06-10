@@ -2,15 +2,16 @@ import math
 import typing
 
 import torch
-import torch.nn as nn
 from torch import Tensor
+import torch.nn as nn
 from torch.nn import functional as F
 
-from exception import InconsistentDimensionalityException
+from .exception import InconsistentDimensionalityException
 
 
 class SelfAttention(nn.Module):
     '''
+    Multi-head self-attention to be used in a transformer.
     '''
 
     embedding_dimension: int
